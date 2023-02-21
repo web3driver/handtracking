@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yoha Engine Draw Demo</title>
+    <meta name="Yoha Engine Draw Demo" content="Yoha Engine Draw Demo">
+  </head>
+  <body> 
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #494949;
+        color: white;
+      }
+      #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #inner-container {
+        margin-top: 2rem;
+        display: inline-block;
+        width: 85%;
+        min-height: 500px;
+        border: 1px solid white;
+        padding: 1rem;
+      }
+      #logs-container {
+        display: flex;
+      }
+      #logs {
+        padding: 1rem;
+        min-width: 30rem;
+      }
+      h3 {
+        margin-top: 0px;
+        margin-bottom: 2px;
+      }
+      .pose-image {
+        width: 100px;
+      }
+      a {
+        color: #92D1FF;
+      }
+    </style>
+
+    <div id="container">
+      <div id="inner-container">
+        <h1 >Yoha Engine Draw Demo</h1>
+        <hr>
+        <div id="canvas-container">
+          <div id="canvas">
+          </div>
+        </div>
+        <div id="logs-container">
+          <div id="logs">
+            <div id="mobile" style="display: none; color: red;">You appear to be using a mobile device. For best results use a laptop/desktop pc.</div>
+            <div>Downloading model: <span id="progress">0%</span></div>
+            <div id="warmup" style="display: none;">Warming up...</div>
+            <div id="camera" style="display: none;">Requesting camera access...</div>
+            <div id="error"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
